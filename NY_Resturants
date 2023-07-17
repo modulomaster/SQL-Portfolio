@@ -1,0 +1,9 @@
+SELECT name,
+  CASE
+    WHEN review > 4.5 THEN 'Extraordinary'
+    WHEN review > 4 THEN 'is Excellent'
+    WHEN review > 3 THEN 'is Good'
+    WHEN review > 2 THEN 'is Fair'
+  ELSE 'Poor'
+END AS 'Review'
+FROM nomnom;
